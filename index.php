@@ -146,7 +146,7 @@
                 <li class="nav-item"><a href="inject.php" class="nav-link px-2">Add Resources</a></li>
                 <li class="nav-item"><a href="credits.html" class="nav-link px-2 text-muted">Credits</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
-                <li class="nav-item"><a href="htt" class="nav-link px-2 text-muted">Source Code</a></li>
+                <li class="nav-item"><a href="https://github.com/Adhithya03/AirGapFluxSource" class="nav-link px-2 text-muted">Source Code</a></li>
             </ul>
             <!-- <div class="container">
                 <p class="aboutThisSite">
