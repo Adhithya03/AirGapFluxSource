@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+nav{
+  background-color: #242122;
+}
+/* 
+h1 {
+  color: white;
+  font-size: 50px;  
+}
+
+
+.mainindexbody{
+  background: #312d2e;
+}
+.card-body {
+  background: #423f41;
+} 
+
+
+.card-title{
+    color:#fffdd5;
+}
+.card-text{
+    color:    #9f877d;
+}
+*/
+.card:hover {
+    transition: all .5s;
+    transform: scale(0.95);
+}
+.card-img-top:hover {
+  transition: all .3s;
+  border-style:solid;
+  border-color: aliceblue;
+  border-width: thick;
+}
+
+.text-center{
+    padding: 70px;
+}

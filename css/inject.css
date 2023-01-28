@@ -1,0 +1,149 @@
+body{
+     background: #dbdfff;
+}
+
+ h1{
+     letter-spacing: 5px;
+     font-family: 'Philosopher', sans-serif;
+     margin-top: 50px;
+     margin-bottom: 50px;
+}
+
+h3{
+     color: green;
+     letter-spacing: 10px;
+     font-family: 'Philosopher', sans-serif;
+}
+input {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     border-image: linear-gradient(to right, #5808fb 0%, #5808fb 25%, transparent 75%, transparent 100%);
+     border-image-slice: 1;
+}
+input::-webkit-input-placeholder {
+     color: gray;
+}
+ input::-moz-placeholder {
+     color: gray;
+}
+select:active option {
+  animation: slideDown 0.5s ease-in-out;
+}
+btn{
+    margin: 20px;
+}
+select{
+    padding: 0.5rem;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #5808fb 0%, #5808fb 25%, transparent 75%, transparent 100%);
+    border-image-slice: 1;
+}
+
+select option {
+  background-color: #eee;
+  color: #000;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ .search input[type="text"]{
+     background: linear-gradient(to top, #5808fb,#9929ea);
+     color: #fff;
+     border: 0px;
+}
+ .select input[type="text"]:focus{
+    outline: 0;
+}
+ .search{
+     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+     background: linear-gradient(to top, #5808fb,#9929ea);
+}
+
+.name{
+     min-width: 350px;
+}
+
+.select{
+    margin-bottom: 20px;
+}
+
+ textarea{
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     border: 1px solid #ccc;
+     padding: 12px 20px;
+     font-size: 16px;
+     margin-top: 5px;
+     border-style: solid;
+     border-width: 3px;
+     border-image: linear-gradient(to right, #5808fb 0%, #5808fb 25%, transparent 75%, transparent 100%);
+     border-image-slice: 1;
+}
+ .divider {
+     height: 4px;
+     background-image: linear-gradient(to right, #5808fb 0%, #5808fb 25%, transparent 75%, transparent 100%);
+     border-radius: 2px;
+}
+ .btn-primary {
+     background: linear-gradient(to top, #5808fb,#9929ea);
+     border: 0px;
+}
+
+legend {
+    background: linear-gradient(to right, #9929ea 0%, #5808fb 20%, transparent 60%, transparent 70%, transparent 100%);
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 3px 6px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top:    1.5rem;
+    margin-bottom: 1.5rem;
+}
+input {
+    margin: 0.4rem;
+}
+
+input[type="radio"] {
+
+  display: none;
+}
+input[type="radio"] + label::before {
+    content: "";
+    width: 20px;
+
+    height: 20px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 0%;
+    border: 2px solid;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: relative;
+
+
+}
+
+input[type="radio"]:checked + label::before {
+    content: "";
+  transition: all 0.2s ease-in-out;
+    width:  20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid #692afd;
+    display: inline-block;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: relative;
+    background: linear-gradient(to right, #5808fb 0%, #5808fb 10%, transparent 100%);
+}
+
+.thanks{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Charm', cursive;
+ }
