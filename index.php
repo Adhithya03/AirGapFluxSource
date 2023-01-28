@@ -87,7 +87,7 @@
     <div class="col-md-6 col-sm-12">
         <fieldset>
             <select name="subject" id="subject">
-                            <option selected value>Select Subject</option>
+                            <option selected value>Searching all Subjects</option>
                             <option value="basc">Basics of Electrical and Electronics</option>
                             <option value="bect">Basic Electric Circuit Theory </option>
                             <option value="coel">Consumer Electronics </option>
