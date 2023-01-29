@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/search.css" />
         <link href="images/search.svg" rel="icon" type="image/x-icon" />
         <!-- ICONS -->
+        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <!-- Fonts -->
@@ -63,8 +64,8 @@
                 <div class="container text-center">
                     <?php
                         
-                        $pdo = new PDO('mysql:host=localhost;dbname=eeresources', 'root', '');
-                        // $pdo = new PDO('mysql:host=sql100.epizy.com;dbname=epiz_33172625_eeresources', 'epiz_33172625', 'uDjIYA7KgvC2x');
+                        // $pdo = new PDO('mysql:host=localhost;dbname=eeresources', 'root', '');
+                        $pdo = new PDO('mysql:host=sql100.epizy.com;dbname=epiz_33172625_eeresources', 'epiz_33172625', 'uDjIYA7KgvC2x');
 
                         $stmt = $pdo->query('SELECT COUNT(*) FROM resourcesmaster_01'); 
                         $count = $stmt->fetchColumn(); // Display the result 
@@ -136,10 +137,18 @@
 
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="inject.php" class="nav-link px-2">Add Resources</a></li>
-                <li class="nav-item"><a href="credits.html" class="nav-link px-2 text-muted">Credits</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
-                <li class="nav-item"><a href="https://github.com/Adhithya03/AirGapFluxSource" class="nav-link px-2 text-muted">Source Code</a></li>
             </ul>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                
+                <li class="nav-item"><a href="https://forms.gle/smtHxBQJJHJPeXG89" class="nav-link px-2 text-muted"><i>Feedback | Bug Report | Request Feature</i></a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About This Site</a></li>
+            </ul>
+            
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="https://github.com/Adhithya03/AirGapFluxSource" class="nav-link px-2 text-muted">Source Code</a></li>
+                <li class="nav-item"><a href="credits.html" class="nav-link px-2 text-muted">Credits</a></li>
+            </ul>
+            
             <!-- <div class="container">
                 <p class="aboutThisSite">
                     Hello, I am Adhithya, and I am committed to gaining an in-depth understanding of the intricacies of electrical engineering. With this goal in mind, I am proud to introduce this website

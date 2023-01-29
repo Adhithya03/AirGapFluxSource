@@ -1,7 +1,7 @@
 <?php
 
-$con = MySQLi_connect("localhost", "root", "", "eeresources");
-// $con = MySQLi_connect("sql100.epizy.com", "epiz_33172625", "uDjIYA7KgvC2x", "epiz_33172625_eeresources");
+// $con = MySQLi_connect("localhost", "root", "", "eeresources");
+$con = MySQLi_connect("sql100.epizy.com", "epiz_33172625", "uDjIYA7KgvC2x", "epiz_33172625_eeresources");
 
 if (MySQLi_connect_errno()) {
     echo "Failed to connect to MySQL: " . MySQLi_connect_error();
