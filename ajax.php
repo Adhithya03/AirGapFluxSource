@@ -1,7 +1,7 @@
 <?php
 
-// $con = MySQLi_connect("localhost", "root", "", "eeresources");
-$con = MySQLi_connect("sql100.epizy.com", "epiz_33172625", "uDjIYA7KgvC2x", "epiz_33172625_eeresources");
+$con = MySQLi_connect("localhost", "root", "", "eeresources");
+// $con = MySQLi_connect("sql100.epizy.com", "epiz_33172625", "uDjIYA7KgvC2x", "epiz_33172625_eeresources");
 
 if (MySQLi_connect_errno()) {
     echo "Failed to connect to MySQL: " . MySQLi_connect_error();
@@ -9,11 +9,10 @@ if (MySQLi_connect_errno()) {
 if (isset($_POST["search"])) {
 
     $Name = $_POST["search"];
-    $sub = $_POST["subject"];
+    $sub = $_POST["subject"];   
     $resType = $_POST["restype"];
 
     $Query = "SELECT * FROM resourcesmaster_01 WHERE `Subject` LIKE '%$sub%' AND `TopicName` LIKE '%$Name%' AND `Resource Type` LIKE '%$resType%' LIMIT 10";
-    // echo "Query Used (for nerds):<code>".$Query."</code>";
 
     $ExecQuery = MySQLi_query($con, $Query);
 
@@ -41,7 +40,8 @@ if (isset($_POST["search"])) {
             $Result["Resources"]
         );
         $parts = parse_url($youtube_link);
-        if (isset($parts["host"]) && $parts["host"] == "www.youtube.com") {
+        if (isset($parts["host"]) && $parts["host"] == "www.youtube.com" && strpos($parts["path"], "/playlist") === false) {
+
             parse_str($parts["query"], $query);
             $video_id = substr($query["v"], 0, 11);
             $filename = $video_id . ".jpg";
@@ -67,7 +67,7 @@ if (isset($_POST["search"])) {
         }
 
         if (!empty($Result["Notes"])) { ?>
-        <p class="notes">Notes: <?php echo $Result["Notes"] . "</p>";}
+        <p class="notes"><?php echo $Result["Notes"] . "</p>";}
         }
 }
 ?>
