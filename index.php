@@ -64,8 +64,7 @@
                 <div class="container text-center">
                     <?php
                         
-                        // $pdo = new PDO('mysql:host=localhost;dbname=eeresources', 'root', '');
-                        $pdo = new PDO('mysql:host=sql100.epizy.com;dbname=epiz_33172625_eeresources', 'epiz_33172625', 'uDjIYA7KgvC2x');
+                        $pdo = new PDO('mysql:host=localhost;dbname=eeresources', 'root', '');
 
                         $stmt = $pdo->query('SELECT COUNT(*) FROM resourcesmaster_01'); 
                         $count = $stmt->fetchColumn(); // Display the result 
