@@ -69,8 +69,10 @@
 
                         $stmt = $pdo->query('SELECT COUNT(*) FROM resourcesmaster_01'); 
                         $count = $stmt->fetchColumn(); // Display the result 
-                        echo "<h4 class='text-muted'>Explore our extensive collection of  <strong> " . $count . "</strong> Electrical Engineering resources.</h4>"; 
-                        ?>
+                        echo "<h4 class='text-muted'> Enhance your expertise with our   <strong> " . $count . "</strong> robust Electrical Engineering resources.</h4>"; 
+                       
+                        313 
+                       ?>
                 </div>
             
             </div>
