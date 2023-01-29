@@ -1,6 +1,6 @@
 body {
         font-family: 'Exo 2', sans-serif;
-    color: white;
+    color: 000;
 }
 
 .container {
@@ -28,6 +28,7 @@ body {
 }
 
 .about-section img {
+    border: #000 solid 5px;
     width: 300px;
     height: 300px;
 /*    border-radius: 50%;*/
@@ -40,5 +41,6 @@ body {
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 30px;
-    color: #fff;
+    color: #000;
+    text-align: left;
 }

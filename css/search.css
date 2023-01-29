@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    transition: scroll-behavior 2s; 
+
+}
 body{
     background: #dbdfff;
 }
@@ -27,6 +32,7 @@ h3{
 }
 h4{
     font-family: 'Dosis', sans-serif;
+    font-style: italic;
     font-size: 20px;
     margin:0px;
     color: #7114f4;
@@ -149,20 +155,47 @@ p{
     color: #333;    
 }
 
-.divider {
-    height: 4px;
-    background-image: linear-gradient(to right, #5808fb 0%, #5808fb 25%, transparent 75%, transparent 100%);
-    border-radius: 2px;
-    margin: 1.5rem;
-}
+
 img{
     border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;
     margin: 0.7rem;
 }
+img:hover{
+    transition: all ease-in-out 0.2s;
+    transform: scale(1.05);
+}
 
 .gradient-border {
- border: 15px solid;
-  -webkit-border-image: linear-gradient(to top, #5808fb 0%, #5808fb 25%, transparent 75%, transparent 100%) 5;
-  -o-border-image: linear-gradient(to top, #5808fb 0%, #5808fb 25%, transparent 75%, transparent 100%) 5;
-  border-image: linear-gradient(to top, #5808fb 0%, #5808fb 25%, transparent 75%, transparent 100%) 5;
+ border: 8px solid;
+    border-image:       linear-gradient(to top, rgb(89, 22, 248,0.9) 0%, rgb(89, 22, 248,0.6) 25%, transparent 75%, transparent 100%) 5;
+  -webkit-border-image: linear-gradient(to top, rgb(89, 22, 248,0.9) 0%, rgb(89, 22, 248,0.6) 25%, transparent 75%, transparent 100%) 5;
+  -o-border-image:      linear-gradient(to top, rgb(89, 22, 248,0.9) 0%, rgb(89, 22, 248,0.6) 25%, transparent 75%, transparent 100%) 5;
 }
+
+.divider {
+    height: 4px;
+    background-image: linear-gradient(to right, rgb(89, 22, 248,0.8) 0%, rgb(89, 22, 248,0.8) 25%, transparent 75%, transparent 100%);
+    border-radius: 2px;
+    margin: 1.5rem;
+}
+.divider2 {
+    height: 4px;
+    background: linear-gradient(to right, transparent 0%, rgb(89, 22, 248,0.8) 50%, rgb(89, 22, 248,0.8) 75%, transparent 100%);
+    border-radius: 2px;
+    margin-top: 3rem;
+    margin: 2rem;
+}
+
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    font-family: 'Material Symbols Outlined';
+    font-size: 1em;
+  }

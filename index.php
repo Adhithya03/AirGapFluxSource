@@ -5,12 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=0.78" />
         <title>Airgapflux Search page</title>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <link rel="stylesheet" href="css/bootstrap-4.4.1.css" />
         <link rel="stylesheet" href="css/search.css" />
         <link href="images/search.svg" rel="icon" type="image/x-icon" />
         <!-- ICONS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Exo+2:wght@300&display=swap" rel="stylesheet" />
@@ -20,18 +21,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@1,400&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
-        <!--  -->
     </head>
     <body>
         <div class="container">
             <center>
                 <h1>Search Resources</h1>
             </center>
-            
             <div class="container">
-
                 <?php
-
                     $random_num = rand(0, 25);
                     $quotes = array(
                         "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science.",
@@ -64,26 +61,26 @@
                     echo "<p class='text-center text-muted'> &ldquo;" . $quotes[$random_num] . "&rdquo;</p>"; 
                 ?>
                 <div class="container text-center">
-                            <?php
-                // $pdo = new PDO('mysql:host=localhost;dbname=eeresources', 'root', '');
-                $pdo = new PDO('mysql:host=sql100.epizy.com;dbname=epiz_33172625_eeresources', 'epiz_33172625', 'uDjIYA7KgvC2x');
-                
-                // Execute the query
-                $stmt = $pdo->query('SELECT COUNT(*) FROM resourcesmaster_01'); 
-                $count = $stmt->fetchColumn(); // Display the result 
-                echo "<h4 class='text-muted'>Explore our extensive collection of  <strong> " . $count . "</strong> Electrical Engineering resources.</h4>"; 
-                ?>
+                    <?php
+                        
+                        $pdo = new PDO('mysql:host=localhost;dbname=eeresources', 'root', '');
+                        // $pdo = new PDO('mysql:host=sql100.epizy.com;dbname=epiz_33172625_eeresources', 'epiz_33172625', 'uDjIYA7KgvC2x');
+
+                        $stmt = $pdo->query('SELECT COUNT(*) FROM resourcesmaster_01'); 
+                        $count = $stmt->fetchColumn(); // Display the result 
+                        echo "<h4 class='text-muted'>Explore our extensive collection of  <strong> " . $count . "</strong> Electrical Engineering resources.</h4>"; 
+                        ?>
                 </div>
             
             </div>
             <div class="row">
-    <div class="col-md-6 col-sm-12">
-        <fieldset>
-            <div class="search">
-                <input type="text" id="search" placeholder="Type the topic name." />
+            <div class="col-md-6 col-sm-12">
+                <fieldset>
+                    <div class="search">
+                        <input type="text" id="search" placeholder="Type the topic name." />
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-    </div>
     <div class="col-md-6 col-sm-12">
         <fieldset>
             <select name="subject" id="subject">
@@ -126,20 +123,15 @@
                     <input type="radio" name="restype" id="em1" value="1" />
                     <label for="em1">Text</label>
                 </div>
-                <!--<div class="custom-radio">
-                    <input type="radio" name='restype' id="em2" value="2">
-                    <label for="em2">PDF</label>
-                    </div> -->
+     
             </div>
             
-            
-            <div class="container">
                 <div class="disp" id="display"></div>
-            </div>
-            
 
-
+            <div class="divider2"></div>
         </div>
+
+
         <footer class="footer fixed py-3 my-12">
 
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -157,5 +149,9 @@
             </div> -->
             <p class="copy text-center text-muted">&copy; 2023 Adhithya</p>
         </footer>
+        <div class="go-to-top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+        </div>
+
     </body>
 </html>
