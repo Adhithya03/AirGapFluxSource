@@ -1,2 +1,4 @@
 # AirGapFluxSource
-Source for for my educational Resources website.
+Source code for my educational Resources website.
+
+https://airgapflux.co.in
