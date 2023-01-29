@@ -1,7 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
-    // $pdo = new PDO('mysql:host=localhost;dbname=eeresources', 'root', '');
-    $pdo = new PDO('mysql:host=sql100.epizy.com;dbname=epiz_33172625_eeresources', 'epiz_33172625', 'uDjIYA7KgvC2x');
+    $pdo = new PDO('mysql:host=localhost;dbname=eeresources', 'root', '');
     
     $stmt = $pdo->prepare("INSERT INTO `resourcesmaster_01`(`Subject`, `Category`, `TopicName`, `Resources`, `Resource Type`, `Notes`, `ConceptualRating`) VALUES (:subject, :category, :topicname, :resources, :restype, :notes, :rating)");
 
